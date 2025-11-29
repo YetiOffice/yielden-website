@@ -16,41 +16,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* HEADER */}
-      <header className="border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-semibold text-black">
-              Yeelden
-            </Link>
-            <nav className="hidden md:flex items-center gap-8">
-              <a href="#home" className="text-gray-700 hover:text-black transition-colors">
-                Home
-              </a>
-              <a href="#services" className="text-gray-700 hover:text-black transition-colors">
-                Services
-              </a>
-              <a href="#portfolio" className="text-gray-700 hover:text-black transition-colors">
-                Portfolio
-              </a>
-              <a href="#about" className="text-gray-700 hover:text-black transition-colors">
-                About
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-black transition-colors">
-                Contact
-              </a>
-            </nav>
-            <a
-              href="#contact"
-              onClick={scrollToContact}
-              className="bg-[#00A5FF] text-white px-6 py-2.5 rounded-lg font-medium hover:bg-[#0095E6] transition-colors"
-            >
-              Get a Free Audit
-            </a>
-          </div>
-        </div>
-      </header>
-
       {/* HERO SECTION */}
       <section id="home" className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
