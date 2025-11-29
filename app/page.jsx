@@ -1,6 +1,19 @@
+'use client'
+
 import Link from 'next/link'
 
 export default function Home() {
+  const scrollToContact = (e) => {
+    e.preventDefault()
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Placeholder handler
+    console.log('Form submitted')
+  }
+
   return (
     <main className="min-h-screen bg-white">
       {/* HEADER */}
@@ -11,34 +24,35 @@ export default function Home() {
               Yeelden
             </Link>
             <nav className="hidden md:flex items-center gap-8">
-              <Link href="/" className="text-gray-700 hover:text-black transition-colors">
+              <a href="#home" className="text-gray-700 hover:text-black transition-colors">
                 Home
-              </Link>
-              <Link href="/services" className="text-gray-700 hover:text-black transition-colors">
+              </a>
+              <a href="#services" className="text-gray-700 hover:text-black transition-colors">
                 Services
-              </Link>
-              <Link href="/portfolio" className="text-gray-700 hover:text-black transition-colors">
+              </a>
+              <a href="#portfolio" className="text-gray-700 hover:text-black transition-colors">
                 Portfolio
-              </Link>
-              <Link href="/about" className="text-gray-700 hover:text-black transition-colors">
+              </a>
+              <a href="#about" className="text-gray-700 hover:text-black transition-colors">
                 About
-              </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-black transition-colors">
+              </a>
+              <a href="#contact" className="text-gray-700 hover:text-black transition-colors">
                 Contact
-              </Link>
+              </a>
             </nav>
-            <Link
-              href="/audit"
+            <a
+              href="#contact"
+              onClick={scrollToContact}
               className="bg-[#00A5FF] text-white px-6 py-2.5 rounded-lg font-medium hover:bg-[#0095E6] transition-colors"
             >
               Get a Free Audit
-            </Link>
+            </a>
           </div>
         </div>
       </header>
 
       {/* HERO SECTION */}
-      <section className="py-24 md:py-32">
+      <section id="home" className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-black leading-tight mb-6">
@@ -48,12 +62,13 @@ export default function Home() {
               AI-powered, conversion-optimized websites built in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/audit"
+              <a
+                href="#contact"
+                onClick={scrollToContact}
                 className="bg-[#00A5FF] text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-[#0095E6] transition-colors text-center"
               >
                 Get a Free Audit
-              </Link>
+              </a>
               <Link
                 href="/pricing"
                 className="bg-white border-2 border-gray-200 text-black px-8 py-4 rounded-lg font-medium text-lg hover:border-gray-300 transition-colors text-center"
@@ -66,7 +81,7 @@ export default function Home() {
       </section>
 
       {/* VALUE PROPS */}
-      <section className="py-24 bg-gray-50">
+      <section id="about" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-medium text-black text-center mb-16">
             Why Yeelden
@@ -121,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="py-24">
+      <section id="services" className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-medium text-black text-center mb-16">
             Our Services
@@ -203,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* PORTFOLIO PREVIEW */}
-      <section className="py-24">
+      <section id="portfolio" className="py-24">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-medium text-black text-center mb-16">
             Our Work
@@ -272,6 +287,98 @@ export default function Home() {
                 <p className="text-gray-500 text-sm">Marketing Director, ScaleUp Co.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section id="contact" className="py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-medium text-black text-center mb-6">
+              Get Started
+            </h2>
+            <p className="text-xl text-gray-600 text-center mb-12 leading-relaxed">
+              Ready to build a website that makes money? Let's talk.
+            </p>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="business" className="block text-sm font-medium text-black mb-2">
+                    Business Name
+                  </label>
+                  <input
+                    type="text"
+                    id="business"
+                    name="business"
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                    placeholder="Your business name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="website" className="block text-sm font-medium text-black mb-2">
+                    Website URL
+                  </label>
+                  <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                    placeholder="https://yourwebsite.com"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="question" className="block text-sm font-medium text-black mb-2">
+                  How can we help?
+                </label>
+                <textarea
+                  id="question"
+                  name="question"
+                  rows={5}
+                  required
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors resize-none"
+                  placeholder="Tell us about your project..."
+                />
+              </div>
+              <div className="pt-4">
+                <button
+                  type="submit"
+                  className="w-full bg-[#00A5FF] text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-[#0095E6] transition-colors"
+                >
+                  Get a Free Audit
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
