@@ -12,6 +12,12 @@ const inter = Inter({
 export const metadata = {
   title: 'Yeelden - Websites Built to Make Money',
   description: 'AI-powered, conversion-optimized websites built in 48 hours.',
+  icons: {
+    icon: {
+      url: '/favicon.png',
+      sizes: 'any',
+    },
+  },
 }
 
 export default function RootLayout({ children }) {
