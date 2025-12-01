@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* VALUE PROPS */}
-      <section id="about" className="py-20 md:py-24 bg-gray-50">
+      <section id="about" className="py-20 md:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black text-center mb-12 md:mb-16">
             Why Yeelden
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section id="services" className="py-20 md:py-24">
+      <section id="services" className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black text-center mb-12 md:mb-16">
             Our Services
@@ -136,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-20 md:py-24 bg-gray-50">
+      <section className="py-20 md:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black text-center mb-12 md:mb-16">
             How It Works
@@ -182,29 +182,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PORTFOLIO PREVIEW */}
-      <section id="portfolio" className="py-20 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black text-center mb-12 md:mb-16">
-            Our Work
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {[1, 2, 3, 4].map((item) => (
-              <div key={item} className="bg-gray-100 rounded-lg aspect-video flex items-center justify-center">
-                <div className="text-center">
-                  <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <p className="text-gray-500 text-sm">Portfolio Screenshot {item}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* TESTIMONIALS */}
-      <section className="py-20 md:py-24 bg-gray-50">
+      <section className="py-20 md:py-28 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black text-center mb-12 md:mb-16">
             What Clients Say
@@ -257,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-20 md:py-24">
+      <section id="contact" className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-black text-center mb-5 md:mb-6">

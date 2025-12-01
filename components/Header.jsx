@@ -37,9 +37,9 @@ export default function Header() {
                 <Link href="/services" className="text-gray-700 hover:text-black transition-colors">
                   Services
                 </Link>
-                <a href="#portfolio" onClick={(e) => scrollToSection(e, 'portfolio')} className="text-gray-700 hover:text-black transition-colors">
+                <Link href="/portfolio" className="text-gray-700 hover:text-black transition-colors">
                   Portfolio
-                </a>
+                </Link>
                 <Link href="/pricing" className="text-gray-700 hover:text-black transition-colors">
                   Pricing
                 </Link>
@@ -118,9 +118,9 @@ export default function Header() {
                   <Link href="/services" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Services
                   </Link>
-                  <a href="#portfolio" onClick={(e) => scrollToSection(e, 'portfolio')} className="text-gray-700 hover:text-black transition-colors py-2">
+                  <Link href="/portfolio" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Portfolio
-                  </a>
+                  </Link>
                   <Link href="/pricing" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Pricing
                   </Link>
