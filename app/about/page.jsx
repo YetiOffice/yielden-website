@@ -24,7 +24,7 @@ export default function About() {
   const differentiators = [
     {
       title: 'Fast Turnaround',
-      description: 'Get your website live in 48 hours without compromising on quality or conversion optimization.'
+      description: 'Get your website live in one week without compromising on quality or conversion optimization.'
     },
     {
       title: 'AI-Enhanced Workflows',
@@ -47,7 +47,7 @@ export default function About() {
     },
     {
       title: 'Build',
-      description: 'Your new website is designed and developed with AI-powered optimization in 48 hours.'
+      description: 'Your new website is designed and developed with AI-powered optimization in one week.'
     },
     {
       title: 'Launch',

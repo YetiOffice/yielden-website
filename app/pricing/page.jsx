@@ -10,7 +10,7 @@ export default function Pricing() {
       price: '$2,997',
       description: 'Perfect for small businesses getting started online.',
       features: [
-        '48-hour website build',
+        'One-week website build',
         'Up to 5 pages',
         'Mobile responsive design',
         'Basic SEO setup',
@@ -24,7 +24,7 @@ export default function Pricing() {
       price: '$4,997',
       description: 'Ideal for growing businesses that need more features.',
       features: [
-        '48-hour website build',
+        'One-week website build',
         'Up to 10 pages',
         'Advanced SEO optimization',
         'Analytics integration',
@@ -39,7 +39,7 @@ export default function Pricing() {
       price: '$7,997',
       description: 'Complete solution for established businesses.',
       features: [
-        '48-hour website build',
+        'One-week website build',
         'Unlimited pages',
         'Full SEO + PPC setup',
         'Custom integrations',
@@ -58,7 +58,7 @@ export default function Pricing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionHeader 
             title="Pricing"
-            subtitle="Choose the plan that's right for your business. All plans include our 48-hour build guarantee."
+            subtitle="Choose the plan that's right for your business. All plans include our one-week build guarantee."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {plans.map((plan, index) => (

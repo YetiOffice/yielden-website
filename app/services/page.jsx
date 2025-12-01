@@ -11,7 +11,7 @@ export default function Services() {
         </svg>
       ),
       title: 'Website Builds',
-      description: 'Custom websites designed to convert visitors into customers, built in 48 hours with AI-powered optimization.'
+      description: 'Custom websites designed to convert visitors into customers, built in one week with AI-powered optimization.'
     },
     {
       icon: (
@@ -45,7 +45,7 @@ export default function Services() {
   const whyYeelden = [
     {
       title: 'Faster Build Cycles',
-      description: 'Get your website live in 48 hours without compromising on quality or conversion optimization.'
+      description: 'Get your website live in one week without compromising on quality or conversion optimization.'
     },
     {
       title: 'Transparent Reporting',
@@ -107,7 +107,7 @@ export default function Services() {
             />
             <ul className="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed">
               <li>AI-enhanced content and design</li>
-              <li>48-hour turnaround structure</li>
+              <li>One-week turnaround structure</li>
               <li>Conversion optimization</li>
               <li>Mobile-first development</li>
               <li>Hosting & maintenance options</li>

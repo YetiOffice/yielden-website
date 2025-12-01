@@ -55,7 +55,7 @@ export default function Home() {
                 Websites Built to Make Money.
               </h1>
               <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 mb-10 md:mb-12 leading-relaxed tracking-slight max-w-2xl">
-                AI-powered, conversion-optimized websites built in 48 hours. Fast, modern, and designed to grow your business.
+                AI-powered, conversion-optimized websites built in one week. Fast, modern, and designed to grow your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12 md:mb-16">
                 <a
@@ -117,7 +117,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl md:text-3xl font-semibold text-black mb-4 tracking-tight">Website Build</h3>
               <p className="text-base md:text-lg text-gray-600 leading-relaxed tracking-slight mb-6">
-                Get a conversion-optimized website built in 48 hours with AI-powered design and best practices.
+                Get a conversion-optimized website built in one week with AI-powered design and best practices.
               </p>
               <Link href="/services" className="text-[#00A5FF] font-medium hover:text-[#0095E6] transition-colors inline-flex items-center">
                 Learn more
@@ -177,7 +177,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <div className={`text-center transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <div className="text-5xl md:text-6xl lg:text-7xl font-semibold text-[#00A5FF] mb-3 tracking-tight">48hr</div>
+              <div className="text-5xl md:text-6xl lg:text-7xl font-semibold text-[#00A5FF] mb-3 tracking-tight">1 Week</div>
               <p className="text-lg md:text-xl text-gray-600 font-medium">Turnaround Time</p>
             </div>
             <div className={`text-center transition-all duration-700 ease-out delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
@@ -215,7 +215,7 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6 tracking-slight">
-                "Yeelden transformed our online presence. Our conversion rate increased by 40% in the first month, and the 48-hour turnaround was incredible."
+                "Yeelden transformed our online presence. Our conversion rate increased by 40% in the first month, and the one-week turnaround was incredible."
               </p>
               <div>
                 <p className="font-semibold text-black text-lg">Sarah Johnson</p>
