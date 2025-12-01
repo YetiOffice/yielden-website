@@ -43,13 +43,13 @@ export default function Services() {
 
   return (
     <main className="min-h-screen bg-white">
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionHeader 
             title="Our Services"
             subtitle="Everything you need to build, optimize, and grow your online presence."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}

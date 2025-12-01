@@ -4,13 +4,13 @@ export default function About() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-black leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-black leading-tight mb-5 md:mb-6">
               Who We Are
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed">
               We build websites that make money. Fast, optimized, and conversion-focused.
             </p>
           </div>
@@ -18,8 +18,8 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-20 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionHeader 
             title="Our Mission"
             subtitle="To help businesses grow faster with AI-powered, conversion-optimized websites that deliver real results."
@@ -42,13 +42,13 @@ export default function About() {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionHeader 
             title="What Makes Yeelden Different"
             subtitle="We're not just another web agency. Here's what sets us apart."
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-white p-8 rounded-lg border border-gray-100">
               <div className="w-12 h-12 bg-[#00A5FF]/10 rounded-lg flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-[#00A5FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

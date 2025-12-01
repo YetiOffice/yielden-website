@@ -11,14 +11,14 @@ export default function Audit() {
 
   return (
     <main className="min-h-screen bg-white">
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <SectionHeader 
               title="Free Website Audit"
               subtitle="Get a comprehensive analysis of your website's performance, SEO, and conversion opportunities."
             />
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
               <div>
                 <label htmlFor="business" className="block text-sm font-medium text-black mb-2">
                   Business Name
@@ -28,7 +28,7 @@ export default function Audit() {
                   id="business"
                   name="business"
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors text-base"
                   placeholder="Your business name"
                 />
               </div>
@@ -41,7 +41,7 @@ export default function Audit() {
                   id="website"
                   name="website"
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors text-base"
                   placeholder="https://yourwebsite.com"
                 />
               </div>
@@ -54,7 +54,7 @@ export default function Audit() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:border-[#00A5FF] transition-colors text-base"
                   placeholder="your@email.com"
                 />
               </div>
@@ -69,10 +69,10 @@ export default function Audit() {
                   I want SEO analysis included in my audit
                 </label>
               </div>
-              <div className="pt-4">
+              <div className="pt-2 md:pt-4">
                 <button
                   type="submit"
-                  className="w-full bg-[#00A5FF] text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-[#0095E6] transition-colors"
+                  className="w-full bg-[#00A5FF] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium text-base sm:text-lg hover:bg-[#0095E6] transition-colors"
                 >
                   Get My Free Audit
                 </button>

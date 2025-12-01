@@ -54,13 +54,13 @@ export default function Pricing() {
 
   return (
     <main className="min-h-screen bg-white">
-      <section className="py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <SectionHeader 
             title="Pricing"
             subtitle="Choose the plan that's right for your business. All plans include our 48-hour build guarantee."
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {plans.map((plan, index) => (
               <div
                 key={index}
