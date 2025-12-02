@@ -34,12 +34,14 @@ export default function Header() {
                 <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Home
                 </a>
-                <Link href="/services" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
+                {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Services link */}
+                {/* <Link href="/services" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Services
-                </Link>
-                <Link href="/portfolio" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
+                </Link> */}
+                {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Portfolio link */}
+                {/* <Link href="/portfolio" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Portfolio
-                </Link>
+                </Link> */}
                 <Link href="/pricing" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Pricing
                 </Link>
@@ -55,12 +57,14 @@ export default function Header() {
                 <Link href="/" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Home
                 </Link>
-                <Link href="/services" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
+                {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Services link */}
+                {/* <Link href="/services" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Services
-                </Link>
-                <Link href="/portfolio" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
+                </Link> */}
+                {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Portfolio link */}
+                {/* <Link href="/portfolio" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Portfolio
-                </Link>
+                </Link> */}
                 <Link href="/pricing" className="text-gray-700 hover:text-[#00A5FF] active:text-[#0095E6] transition-all duration-200 relative pb-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#00A5FF] hover:after:w-full after:transition-all after:duration-200">
                   Pricing
                 </Link>
@@ -115,12 +119,14 @@ export default function Header() {
                   <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="text-gray-700 hover:text-black transition-colors py-2">
                     Home
                   </a>
-                  <Link href="/services" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
+                  {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Services link */}
+                  {/* <Link href="/services" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Services
-                  </Link>
-                  <Link href="/portfolio" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
+                  </Link> */}
+                  {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Portfolio link */}
+                  {/* <Link href="/portfolio" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Portfolio
-                  </Link>
+                  </Link> */}
                   <Link href="/pricing" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Pricing
                   </Link>
@@ -136,12 +142,14 @@ export default function Header() {
                   <Link href="/" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Home
                   </Link>
-                  <Link href="/services" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
+                  {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Services link */}
+                  {/* <Link href="/services" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Services
-                  </Link>
-                  <Link href="/portfolio" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
+                  </Link> */}
+                  {/* TEMPORARILY DISABLED: Remove the comment markers below to restore Portfolio link */}
+                  {/* <Link href="/portfolio" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Portfolio
-                  </Link>
+                  </Link> */}
                   <Link href="/pricing" onClick={handleNavClick} className="text-gray-700 hover:text-black transition-colors py-2">
                     Pricing
                   </Link>

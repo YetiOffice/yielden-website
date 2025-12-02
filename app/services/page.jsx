@@ -1,5 +1,31 @@
 'use client'
 
+// ============================================================================
+// TEMPORARILY DISABLED: To restore this page, remove lines 3-22 (this comment
+// block and the placeholder return) and uncomment the original code below.
+// The original code is preserved starting at line 24.
+// ============================================================================
+export default function Services() {
+  return (
+    <main className="min-h-screen bg-white">
+      <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative bg-gradient-to-b from-blue-50/40 via-slate-50/50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-black mb-6 md:mb-8 break-words tracking-tight leading-[1.05]">
+              This page is currently being updated.
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}
+
+// ============================================================================
+// ORIGINAL CODE PRESERVED BELOW - Uncomment to restore the full page
+// ============================================================================
+// To restore: Delete lines 3-22 above, then uncomment all code below
+/*
 import Link from 'next/link'
 import Button from '@/components/Button'
 import { useEffect, useRef, useState } from 'react'
@@ -90,11 +116,9 @@ export default function Services() {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* HERO SECTION */}
       <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative bg-gradient-to-b from-slate-50 via-blue-50/30 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center" ref={heroRef}>
-            {/* Left Column - Text */}
             <div className={`transition-all duration-700 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold text-black leading-[1.05] mb-6 md:mb-8 break-words tracking-tight">
                 Everything You Need to Grow Online
@@ -111,8 +135,6 @@ export default function Services() {
                 </Button>
               </div>
             </div>
-
-            {/* Right Column - Abstract Visual */}
             <div className={`transition-all duration-700 ease-out delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <div className="relative aspect-square rounded-3xl bg-gradient-to-br from-[#00A5FF]/20 via-blue-100/30 to-slate-100/50 shadow-2xl overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-tr from-[#00A5FF]/10 to-transparent"></div>
@@ -123,12 +145,9 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* MAIN SERVICE CARDS */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-            {/* Website Development */}
             <div id="website-builds" className="bg-white border border-gray-200 p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-[#00A5FF]/10 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-[#00A5FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -146,8 +165,6 @@ export default function Services() {
                 </svg>
               </Link>
             </div>
-
-            {/* SEO Growth System */}
             <div id="seo" className="bg-white border border-gray-200 p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-[#00A5FF]/10 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-[#00A5FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -165,8 +182,6 @@ export default function Services() {
                 </svg>
               </Link>
             </div>
-
-            {/* PPC Advertising */}
             <div id="ppc" className="bg-white border border-gray-200 p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-[#00A5FF]/10 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-[#00A5FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,8 +202,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* FULL-SERVICE BREAKDOWN */}
       <section className="py-24 md:py-32 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 md:mb-20">
@@ -222,8 +235,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* STATS SECTION */}
       <section className="py-24 md:py-32 bg-white" ref={statsRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 md:mb-20">
@@ -254,8 +265,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* PORTFOLIO PREVIEW STRIP */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-12">
@@ -277,8 +286,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
-      {/* CTA SECTION */}
       <section className="py-24 md:py-32 bg-gradient-to-b from-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
@@ -302,3 +309,4 @@ export default function Services() {
     </main>
   )
 }
+*/
