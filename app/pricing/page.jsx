@@ -29,7 +29,7 @@ export default function Pricing() {
     }
   }, [])
 
-  const toggleFaq = (index: number) => {
+  const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index)
   }
 
@@ -191,7 +191,7 @@ export default function Pricing() {
                 <div className="absolute top-1/4 left-1/4 w-20 h-20 bg-[#00A5FF]/25 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-28 h-28 bg-blue-200/30 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-24 h-24 border-3 border-[#00A5FF]/30 rounded-2xl rotate-12"></div>
+                  <div className="w-24 h-24 border-2 border-[#00A5FF]/30 rounded-2xl rotate-12"></div>
                 </div>
                 <div className="absolute top-1/3 right-1/3 w-12 h-12 bg-[#00A5FF]/20 rounded-lg rotate-45"></div>
               </div>
