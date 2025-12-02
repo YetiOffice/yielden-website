@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Button from '@/components/Button'
 import { useEffect, useRef, useState } from 'react'
 
@@ -131,17 +132,16 @@ export default function About() {
               </p>
             </div>
 
-            {/* Right Column - Abstract Visual */}
+            {/* Right Column - Hero Image */}
             <div className={`transition-all duration-700 ease-out delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <div className="relative aspect-square rounded-3xl bg-gradient-to-br from-[#00A5FF]/15 via-blue-100/20 to-slate-100/40 shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#00A5FF]/5 to-transparent"></div>
-                <div className="absolute top-1/4 left-1/4 w-24 h-24 bg-[#00A5FF]/25 rounded-full blur-2xl"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-blue-200/30 rounded-full blur-3xl"></div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-32 h-32 border-2 border-[#00A5FF]/30 rounded-3xl rotate-12"></div>
-                </div>
-                <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-[#00A5FF]/20 rounded-xl rotate-45"></div>
-                <div className="absolute bottom-1/3 left-1/3 w-12 h-12 bg-blue-300/25 rounded-lg rotate-12"></div>
+                <Image
+                  src="/images/about/about-header.webp"
+                  alt="About Yeelden"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
